@@ -1,0 +1,34 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* 🎨 Background */
+  --bg-primary: #f4f5fb;
+  --bg-secondary: #ffffff;
+
+  /* 🎨 Brand / Color */
+  --color-brand-light: #ca3b84;
+  --color-brand-mid: #a52c6b;
+  --color-brand-dark: #c93847;
+
+  /* 🎨 Content */
+  --content-primary: #0b0b12;
+  --content-secondary: #374151;
+  --content-tertiary: #9ca3af;
+  --content-white: #ffffff;
+
+  /* 🎨 Border */
+  --border-primary: #d1d5db;
+  --border-hover: #9ca3af;
+
+  /* 🔤 Tipografia */
+  --font-family: "Inter", sans-serif;
+
+  --title: 700 1.5rem / 2rem;
+  --label: 600 1rem / 1.25rem;
+  --paragraph: 500 1rem / 1.25rem;
+  --link: 500 0.875rem / 1rem;
+}
