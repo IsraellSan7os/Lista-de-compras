@@ -1,0 +1,25 @@
+/* Só aplica no MOBILE */
+@media (max-width: 767px) {
+  #app {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 390px;
+    padding: 43px 32px 170px;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 627px;
+    display: flex;
+    margin: auto;
+  }
+}

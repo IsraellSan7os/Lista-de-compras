@@ -32,3 +32,8 @@
   --paragraph: 500 1rem / 1.25rem;
   --link: 500 0.875rem / 1rem;
 }
+
+body {
+  background-color: var(--border-primary);
+  font: var(--font-family);
+}
