@@ -10,9 +10,9 @@
   --bg-secondary: #ffffff;
 
   /* 🎨 Brand / Color */
-  --color-brand-light: #ca3b84;
+  --color-brand-light: #ca3884;
   --color-brand-mid: #a52c6b;
-  --color-brand-dark: #c93847;
+  --color-brand-danger: #c93847;
 
   /* 🎨 Content */
   --content-primary: #0b0b12;
@@ -27,14 +27,20 @@
   /* 🔤 Tipografia */
   --font-family: "Inter", sans-serif;
 
-  --title: 700 1.5rem / 2rem;
-  --label: 600 1rem / 1.25rem;
-  --paragraph: 500 1rem / 1.25rem;
-  --link: 500 0.875rem / 1rem;
+  --title: 700 1.5rem / 2rem var(--font-family);
+  --label: 600 1rem / 1.25rem var(--font-family);
+  --paragraph: 500 1rem / 1.25rem var(--font-family);
+  --link: 500 0.875rem / 1rem var(--font-family);
 }
 
 body {
-  background-color: var(--border-primary);
+  background-color: var(--bg-primary);
   font: var(--font-family);
-
 }
+
+a {
+  text-decoration: none;
+  color: var(--color-brand-light);
+  font: var(--link);
+}
+

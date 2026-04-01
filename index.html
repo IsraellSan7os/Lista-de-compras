@@ -1,55 +1,71 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Lista de compras quicklist</title>
 
     <link rel="stylesheet" href="style/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css"
+    />
   </head>
+
   <body>
     <div id="app">
-      <div class="container">
-
+      <div class="wrapper">
         <section class="img">
           <img src="img/Larke.svg" alt="" />
           <img src="img/quicklist.svg" alt="" />
         </section>
 
-        <a href="">Voltar</a>
-        <h1>Compras da semana</h1>
+        <div class="container">
+          <div id="a">
+            <i class="hgi hgi-stroke hgi-arrow-left-02"></i>
+            <a href="">Volta</a>
+          </div>
+          <h1>Compras da semana</h1>
 
-        <form action="#">
-          <input type="text" placeholder="Adicione um novo item" />
-          <input type="button" value="Adicionar item " />
+          <form action="#">
+            <div class="form-row">
+              <input
+                type="text"
+                id="item"
+                placeholder="Adicione um novo item"
+              />
+              <input type="button" id="button" value="Adicionar item" />
+            </div>
 
-          <ul>
-            <li class="item">
-              <label class="item-left">
-                <input type="checkbox" />
-                <span>Pão de forma</span>
-              </label>
+            <ul>
+              <!-- <li class="item">
+                <label class="item-left">
+                  <input type="checkbox" class="check" />
+                  <span class="custom-checkbox"></span>
+                  <span>Pão de forma</span>
+                </label>
 
-              <button class="item-delete">
-                <img src="img/delete.png" alt="Excluir item" />
-              </button>
-            </li>
-          </ul>
-        </form>
+                <button class="item-delete">
+                  <img src="img/icon delete.svg" alt="Excluir item" />
+                </button>
+              </li> -->
+            </ul>
+          </form>
 
-        <footer>
-          <img src="img/warning-circle-filled.png" alt="">
-          <span>O item foi removido da lista</span>
-          <img src="img/delete-small.png" alt="">
-        </footer>
+          <footer>
+            <img src="img/Icon.svg" alt="" />
+            <span>O item foi removido da lista</span>
+            <img src="img/delete-small.svg" alt="" />
+          </footer>
+        </div>
       </div>
     </div>
   </body>

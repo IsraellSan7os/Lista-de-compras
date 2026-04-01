@@ -1,23 +1,184 @@
-/* Só aplica no MOBILE */
+.wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 7px;
+  margin-bottom: 62px;
+}
+
+.container {
+  width: 100%;
+  max-width: 627px;
+  margin: 0 auto;
+
+  #a {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: var(--color-brand-light);
+    font-weight: bolder;
+  }
+
+  h1 {
+    font: var(--title);
+    width: 240px;
+    margin-block: 16px 44px;
+  }
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+#item {
+  width: 451px;
+  height: 44px;
+  border-radius: 12px;
+  padding: 11px 18px;
+  background-color: var(--bg-secondary);
+
+  border: solid 2px transparent;
+  outline: none;
+}
+
+#item:focus {
+  border: solid 2px var(--border-hover);
+}
+
+#button {
+  width: 160px;
+  height: 44px;
+
+  background-color: var(--color-brand-light);
+  color: var(--content-white);
+  font: var(--label);
+  border-radius: 12px;
+  cursor: pointer;
+}
+#button:hover {
+  background-color: var(--color-brand-mid);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  width: 627px;
+  height: 49px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 8px 12px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.item span {
+  font: var(--paragraph);
+  color: var(--content-secondary);
+}
+
+/* Esconde checkbox padrão */
+.check {
+  display: none;
+}
+
+/* Checkbox custom */
+.custom-checkbox {
+  width: 16px;
+  height: 16px;
+  background: url("../img/checkbox.png") no-repeat center/cover;
+}
+
+/* Marcado */
+.check:checked + .custom-checkbox {
+  background-image: url("../img/state=selected.png");
+}
+
+.item-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  width: 627px;
+  height: 44px;
+
+  color: var(--content-white);
+  background-color: var(--color-brand-danger);
+
+  font: var(--label);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 0 12px;
+  border-radius: 12px;
+
+  margin-top: 36px;
+}
+
+footer img:last-of-type {
+  margin-left: auto;
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
   #app {
     display: flex;
-    justify-content: center;
+    align-items: center;
   }
-
+  /* Remove as imagens do topo */
   .img {
     display: none;
   }
 
+  /* Container geral */
   .container {
-    width: 100%;
-    max-width: 390px;
-    padding: 43px 32px 170px;
+    max-width: 100%;
+    padding: 34px 23px;
+  }
 
+  /* Input + botão um embaixo do outro */
+  .form-row {
+    flex-direction: column;
+  }
+  
+  #item,
+  #button {
+    width: 326px;
+    height: 44px;
 
   }
-}
 
-#app {
+  /* Lista */
+  .item {
+    width: 326px;
+  }
 
+  /* Footer também acompanha largura */
+  footer {
+    width: 326px;
+  }
 }
