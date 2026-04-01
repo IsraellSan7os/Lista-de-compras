@@ -98,19 +98,19 @@ ul {
   color: var(--content-secondary);
 }
 
-/* Esconde checkbox padrão */
+
 .check {
   display: none;
 }
 
-/* Checkbox custom */
+
 .custom-checkbox {
   width: 16px;
   height: 16px;
   background: url("../img/checkbox.png") no-repeat center/cover;
 }
 
-/* Marcado */
+
 .check:checked + .custom-checkbox {
   background-image: url("../img/state=selected.png");
 }
@@ -121,7 +121,7 @@ ul {
   cursor: pointer;
 }
 
-footer {
+.toast {
   width: 627px;
   height: 44px;
 
@@ -137,48 +137,45 @@ footer {
   border-radius: 12px;
 
   margin-top: 36px;
+
+  opacity: 0;
+  transition: 0.3s;
 }
 
-footer img:last-of-type {
-  margin-left: auto;
-  cursor: pointer;
+.toast.show {
+  opacity: 1;
 }
-
 @media (max-width: 767px) {
   #app {
     display: flex;
     align-items: center;
   }
-  /* Remove as imagens do topo */
+
   .img {
     display: none;
   }
 
-  /* Container geral */
+
   .container {
     max-width: 100%;
     padding: 34px 23px;
   }
 
-  /* Input + botão um embaixo do outro */
   .form-row {
     flex-direction: column;
   }
-  
+
   #item,
   #button {
     width: 326px;
     height: 44px;
-
   }
 
-  /* Lista */
   .item {
     width: 326px;
   }
 
-  /* Footer também acompanha largura */
-  footer {
+  .toast{
     width: 326px;
   }
 }
